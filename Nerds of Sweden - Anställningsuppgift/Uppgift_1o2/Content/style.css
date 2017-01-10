@@ -1,0 +1,45 @@
+﻿.json {
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    color: yellow;
+    font-size: 32pt;
+}
+
+#key {
+    background: url("bg1.jpg");
+}
+
+#value {
+    background: url("bg2.jpg");
+}
+
+#key, #value {
+    background-size: 1000px;
+    background-position: center;
+}
+
+@media (min-width: 600px) {
+    .json {
+        width: 50%;
+        display: inline-block;
+    }
+
+    #key {
+       float: left;
+    }
+
+    #value {
+        float: right;
+    }
+}
+
+@media (max-width: 599px) {
+    .json {
+        width: 100%;
+    }
+
+    #key, #value{
+        float: none;
+    }
+}
